@@ -1,0 +1,5 @@
+node_modules
+.temp
+.sda-cache
+data-raw
+.DS_Store
