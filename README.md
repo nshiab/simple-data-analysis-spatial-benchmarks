@@ -17,4 +17,7 @@ Here are the steps taken in each script:
 - Performing a spatial join to match each tree to its neighbourhood.
 - Counting the number of trees in each neighbourhood.
 
-The results are presented in the following notebook.
+The results are presented in this
+[notebook](https://observablehq.com/@nshiab/simple-data-analysis-spatial-benchmarks).
+
+![A chart showing the average computation speed of each library](./assets/spatial.png)
