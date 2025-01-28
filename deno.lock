@@ -10,6 +10,7 @@
     "npm:@observablehq/plot@0": "0.6.16",
     "npm:@observablehq/plot@~0.6.16": "0.6.16",
     "npm:@types/d3-geo@3": "3.1.0",
+    "npm:@types/node@*": "22.5.4",
     "npm:adm-zip@0.5": "0.5.16",
     "npm:apache-arrow@17": "17.0.0",
     "npm:cheerio@1": "1.0.0",
@@ -129,6 +130,12 @@
         "undici-types"
       ]
     },
+    "@types/node@22.5.4": {
+      "integrity": "sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==",
+      "dependencies": [
+        "undici-types"
+      ]
+    },
     "adm-zip@0.5.16": {
       "integrity": "sha512-TGw5yVi4saajsSEgz25grObGHEUaDrniwvA2qwSC060KfqGPdglhvPMA2lPIoxs3PQIItj2iag35fONcQqgUaQ=="
     },
@@ -147,7 +154,7 @@
         "@swc/helpers",
         "@types/command-line-args",
         "@types/command-line-usage",
-        "@types/node",
+        "@types/node@20.17.16",
         "command-line-args",
         "command-line-usage",
         "flatbuffers",

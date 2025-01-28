@@ -25,7 +25,8 @@ for (let i = 0; i < 10; i++) {
   });
   // await joined.logTable();
 
-  await sdb.done();
+  // This crashes everything since using duckdb neo. Don't know why.
+  // await sdb.done();
 
   const end = Date.now();
   const duration = end - start;
