@@ -29,6 +29,6 @@ for i in range(10):
     end_time = time.time()
     duration = round((end_time - start_time) * 1000)
     print(f"Iteration {i+1}: {duration} ms")
-    csv_line = f"id,iteration,duration\npython@3.13.0/geopandas@1.0.1,{i+1},{duration}"
+    csv_line = f"id,iteration,duration\npython@3.13.1/geopandas@1.0.1,{i+1},{duration}"
     with open(f"output/python-{i+1}.csv", "w") as file:
         file.write(csv_line)

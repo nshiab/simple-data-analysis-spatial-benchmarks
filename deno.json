@@ -6,7 +6,7 @@
   },
   "nodeModulesDir": "auto",
   "imports": {
-    "@nshiab/journalism": "jsr:@nshiab/journalism@^1.19.1",
-    "@nshiab/simple-data-analysis": "jsr:@nshiab/simple-data-analysis@3.17.0"
+    "@nshiab/journalism": "jsr:@nshiab/journalism@^1.21.10",
+    "@nshiab/simple-data-analysis": "jsr:@nshiab/simple-data-analysis@^4.0.1"
   }
 }
