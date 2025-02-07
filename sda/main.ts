@@ -7,7 +7,9 @@ for (let i = 0; i < 10; i++) {
   const sdb = new SimpleDB();
 
   const trees = sdb.newTable("trees");
-  await trees.loadData("sda/data-raw/arbres-publics.csv");
+  await trees.loadData("sda/data-raw/arbres-publics.csv", {
+    ignoreErrors: true,
+  });
   await trees.filter(`Latitude IS NOT NULL AND Longitude IS NOT NULL`);
   await trees.points("Latitude", "Longitude", "geom");
 
