@@ -34,7 +34,7 @@ for (let i = 0; i < 10; i++) {
   const duration = end - start;
   console.log(i, duration);
   const csvLine = `id,iteration,duration\n
-deno@2.1.7/sda@4.0.1,${i},${duration}`;
+deno@2.4.0/sda@5.6.13,${i},${duration}`;
   writeFileSync(
     `output/deno-sda-${i}.csv`,
     csvLine,
