@@ -27,14 +27,13 @@ for (let i = 0; i < 10; i++) {
   });
   // await joined.logTable();
 
-  // This crashes everything since using duckdb neo. Don't know why.
-  // await sdb.done();
+  await sdb.done();
 
   const end = Date.now();
   const duration = end - start;
   console.log(i, duration);
   const csvLine = `id,iteration,duration\n
-deno@2.4.0/sda@5.6.13,${i},${duration}`;
+deno@2.5.6/sda@5.6.36,${i},${duration}`;
   writeFileSync(
     `output/deno-sda-${i}.csv`,
     csvLine,
