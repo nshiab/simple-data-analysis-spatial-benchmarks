@@ -3,7 +3,7 @@ geospatial computations with
 [simple-data-analysis](https://github.com/nshiab/simple-data-analysis) (Deno),
 GeoPandas (Python) and sf (R).
 
-Each script has been run ten times on a MacBook Pro (Apple M1 Pro / 16 GB).
+Each script has been run ten times on a MacBook Pro (Apple M4 Max / 64 GB).
 
 Here are the steps taken in each script:
 

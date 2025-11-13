@@ -10,7 +10,7 @@ for (let i = 0; i < 10; i++) {
   await trees.loadData("sda/data-raw/arbres-publics.csv", {
     ignoreErrors: true,
   });
-  await trees.filter(`Latitude IS NOT NULL AND Longitude IS NOT NULL`);
+  await trees.removeMissing({ columns: ["Latitude", "Longitude"] });
   await trees.points("Latitude", "Longitude", "geom");
 
   const neighbourhoods = sdb.newTable("neighbourhoods");
@@ -27,7 +27,8 @@ for (let i = 0; i < 10; i++) {
   });
   // await joined.logTable();
 
-  await sdb.done();
+  // Bug?
+  // await sdb.done();
 
   const end = Date.now();
   const duration = end - start;

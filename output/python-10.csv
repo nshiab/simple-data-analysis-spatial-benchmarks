@@ -1,2 +1,2 @@
 id,iteration,duration
-python@3.13.5/geopandas@1.1.1,10,3740
+python@3.14.0/geopandas@1.1.1,10,2348
