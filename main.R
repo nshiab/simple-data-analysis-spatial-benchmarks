@@ -29,6 +29,6 @@ for (i in 1:10) {
   end_time <- Sys.time()
   execution_time <- round(as.numeric(end_time - start_time) * 1000)
   print(paste("Execution time:", execution_time, "ms"))
-  csv_line <- data.frame(id = "r@4.5.2/sf@1.0.22", iteration = i, duration = execution_time)
+  csv_line <- data.frame(id = "r@4.6.0/sf@1.1.1", iteration = i, duration = execution_time)
   write.csv(csv_line, file = paste0("output/R-", i, ".csv"), row.names = FALSE, quote = FALSE)
 }
